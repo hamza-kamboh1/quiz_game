@@ -16,6 +16,11 @@ for item in range(len(question_data)):
 
 q_can = QuizBrain(question_bank)
 q_can.next_q()
+print(q_can.score)
+
 
 while q_can.another_q():
     q_can.next_q()
+    print("Thanks for playing")
+    print("Your final score is: ", q_can.score)
+    print( "You got: ", q_can.score,"correct", "out of", len(question_data), "questions")
